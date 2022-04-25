@@ -1,0 +1,251 @@
+ * {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 28%, 12%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.log {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 20px;
+
+}
+header, h1 , h3, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+nav ul > li {
+    padding: 10px;
+}
+nav ul > li >a {
+    text-decoration: none;
+    color: white;
+}
+.logo img {
+    width: 130px;
+    height: 40px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.fil {
+    text-align: center;
+    margin: 20px;
+}
+.fil .mago {
+    width: 50%;
+}
+.fil h1 {
+    padding: 20px;
+}
+.fil button {
+    background: hsl(176, 68%, 64%); 
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    cursor: pointer;
+}
+.contain, .contain1, .quotes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+   
+}
+.contain div, .contain1 di{
+    margin-top: 30px;
+}
+.contain1 div {
+    margin-top: 50px;
+    padding: 20px;
+    line-height: 1.5;
+}
+.contain1 div > p {
+    padding: 10px 5px;
+   }
+.contain1 img {
+    width: 90%;
+}
+.contain div > img {
+    width: 80px;
+    height: 80px;
+}
+.contain div {
+ min-height: 45%;
+ text-align: center;
+}
+.contain1 div > h3 {
+    font-size: 20px;
+    padding-top: 50px;
+}
+.contain1 #pic {
+    width: 2.8%;
+}
+.quotes div {
+    background:hsl(219, 30%, 18%);
+    padding: 25px 20px;
+
+}
+.quotes {
+    margin-top: 80px;
+}
+.impa {
+    padding: 15px 0;
+}
+.impa img {
+    border-radius: 50%;
+    width: 13%;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;    
+}
+
+.impa > p{
+    float: right;
+    padding: 5px;
+    margin-left: 10px;
+    
+}
+.great {
+    font-size: 10px;
+    padding-top: 4px;
+}
+#quo {
+    margin-bottom: -90px;
+    
+}
+.subscribe {
+    margin-top: 80px;
+    margin-bottom: -50px;
+}
+.subscribe h3, .subscribe p {
+    padding: 10px;
+}
+.subscribe div {
+    text-align: center;
+    width: 60%;
+    margin:  auto;
+    background:  hsl(217, 28%, 15%);
+    padding: 20px;
+ 
+}
+.subscribe .put {
+    border-collapse: collapse;
+    border-style: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    color: black;
+}
+.subscribe .pit {
+    border-style: none;
+    background:hsl(176, 68%, 64%) ;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+footer {
+    background: hsl(216, 53%, 9%);
+    position: relative;
+    z-index: -1;
+    padding: 8em  10px 10px;
+}
+.foot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+}
+.foot .lote  {
+    width: 40%;
+    margin-bottom: 10px;
+}
+.foot p {
+    font-size: 14px;
+    padding:5px 10px;
+    margin: 10 10px 10px 0;
+}
+.click {
+    text-decoration: none;
+    cursor: pointer;
+}
+.lot {
+    width: 5%;
+    margin-right: 10px;
+}
+.social_btn {
+    width: 50%;
+    display: flex;
+}
+.social_btn div {
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+
+
+/** commet **/
+@media(max-width: 1285px){
+  
+    .subscribe div {
+        padding:8px;
+        width: 70%;
+     
+    }
+    .subscribe div >h3 {
+        font-size: 18px;
+    }
+    .subscribe div > p {
+        font-size: 13px;
+    }
+}
+@media(max-width: 875px){
+    .logo img {
+        width: 100px;
+        height: 30px;
+    }
+   .subscribe div > input{
+       display: inline;
+       text-align: center;
+       margin: 5px auto;
+       width: 60%;
+   }
+   .subscribe .put {
+       width: 80%;
+   }
+   .subscribe .pit {
+       width: 70%;
+   }
+   .social_btn{
+    justify-content: center;
+    margin-left: 20%;
+}
+}
+@media(max-width: 640px){
+   .subscribe div {
+       width: 80%;
+   }
+}
+@media(max-width: 420px){
+    .subscribe div {
+        width: 80%;
+    }
+ }
+ 
