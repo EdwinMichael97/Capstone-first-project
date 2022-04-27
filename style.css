@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(218, 28%, 12%);
+    background-color: hsl(218, 28%, 13%);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
@@ -15,6 +15,9 @@ body{
     justify-content:space-between;
     padding-top: 20px;
 
+}
+header{
+    background-color:hsl(217, 28%, 15%) ;
 }
 header, h1 , h3, h2{
     font-family: 'Raleway', sans-serif;
@@ -40,17 +43,24 @@ nav ul > li >a {
     width: 90%;
     margin: auto;
 }
-.fil {
+#fil {
+    background-color:hsl(217, 28%, 15%) ;
+    background-image: url(./bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.content .mago {
+    margin-top: 20px;
+    width: 60%;
+}
+.content {
     text-align: center;
-    margin: 20px;
+ 
 }
-.fil .mago {
-    width: 50%;
-}
-.fil h1 {
+#fil h1 {
     padding: 20px;
 }
-.fil button {
+.content button {
     background: hsl(176, 68%, 64%); 
     border-style: none;
     border-radius: 20px;
@@ -221,6 +231,13 @@ footer {
         width: 100px;
         height: 30px;
     }
+    #fil {
+        background-color:hsl(217, 28%, 15%) ;
+        background-image: url(./bg-curvy-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
    .subscribe div > input{
        display: inline;
        text-align: center;
@@ -242,6 +259,7 @@ footer {
    .subscribe div {
        width: 80%;
    }
+   
 }
 @media(max-width: 420px){
     .subscribe div {
